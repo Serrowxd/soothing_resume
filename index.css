@@ -1,0 +1,45 @@
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.img {
+  /* margin-top: -30rem; */
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+
+  /* opacity: 0.9; */
+
+  z-index: -1;
+}
+
+.main_name h1 {
+  color: #dfdfdfec;
+  text-align: center;
+  padding-top: 27%;
+
+  /* -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 3px; */
+
+  font-size: 9rem;
+}
+
+.main_title h1 {
+  color: #dfdfdfec;
+  text-align: center;
+
+  font-size: 3rem;
+}
+
+.main_nav a {
+  text-align: center;
+  padding-top: 1rem;
+  color: #dfdfdfec;
+  margin: 0 auto;
+  font-size: 1.7rem;
+}
+
+.main_nav a:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "soothing_resume",
+  "version": "1.0.0",
+  "description": "Hey look, another resume attempt from Serrow. This time in a flavor of Bootstrap &amp; JQuery.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Serrowxd/soothing_resume.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Serrowxd/soothing_resume/issues"
+  },
+  "homepage": "https://github.com/Serrowxd/soothing_resume#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.2"
+  }
+}
