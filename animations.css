@@ -111,3 +111,43 @@
 .main_nav a:hover {
   color: gray;
 }
+
+/* About */
+
+.navcont_about {
+  opacity: 0;
+
+  animation-name: text_load;
+  animation-duration: 3s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.about_me {
+  opacity: 0;
+
+  animation-name: text_load;
+  animation-duration: 3s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+.head_img {
+  opacity: 0;
+
+  animation-name: text_load;
+  animation-duration: 3s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+/* Skills */
+
+.icon {
+  max-width: 5rem;
+  max-height: 5rem;
+}
+
+.icons {
+  justify-content: space-around;
+}

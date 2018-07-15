@@ -10,8 +10,8 @@
   <script src="main.js"></script>
 
   <!-- CSS / Animations -->
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../animations.css">
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
@@ -28,31 +28,37 @@
 
 <body>
   <div class="container-fluid">
-    <!-- Logo / PDF Resume -->
     <!-- Background Image -->
     <div>
       <img src="./assets/bkg.jpg" alt="background" class="img">
     </div>
 
-    <!-- Centered Text -->
-    <div class="container">
-      <div class="main_name">
-        <h1>Kevin Jolley</h1>
-      </div>
-      <div class="main_title d-flex flex-row">
-        <h1 class="anim_left"> Web Develeoper</h1>
-        <h1 class="anim_mid"> ||| </h1>
-        <h1 class="anim_right">JavaScript Fanatic</h1>
+    <!-- Links -->
+    <div class="main_nav about_nav">
+      <div class="main_nav d-flex flex-row">
+        <a href="./index.html" class="href navcont_about">Home</a>
+        <a href="./skills.html" class="href navcont_about">Skills</a>
+        <a href="#" class="href navcont_about">Projects </a>
+        <a href="#" class="href navcont_about">Social</a>
       </div>
 
-      <!-- Links -->
-      <div class="main_nav">
-        <div class="main_nav d-flex flex-row">
-          <a href="./about.html" class="href navcont">About</a>
-          <a href="./skills.html" class="href navcont">Skills</a>
-          <a href="#" class="href navcont">Projects </a>
-          <a href="#" class="href navcont">Social</a>
+      <!-- Centered Text -->
+      <div class="container">
+        <div class="main_name about_head">
+          <h1>- Kevin Jolley</h1>
         </div>
+
+        <!-- About Me -->
+        <div class="d-flex flex-row">
+          <p class="about_me">
+            I'm probably the biggest nerd you'll ever meet. You can find me playing Dungeons & Dragons on the weekends, hunched over
+            a keyboard behind a computer screen, or with my nose burried deep in a book. My dream is to become a successful
+            and recognized full-stack developer, as well as a published author. Though I only recently started my quest into
+            the world of code, I hit the ground running and haven't let up since.
+          </p>
+          <img src="./assets/headshot.png" class="head_img" alt="" />
+        </div>
+
       </div>
     </div>
 </body>
