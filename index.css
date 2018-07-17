@@ -35,7 +35,7 @@
 
 .main_nav a {
   text-align: center;
-  padding-top: 1rem;
+  padding-top: 3rem;
   color: #dfdfdfec;
   margin: 0 auto;
   font-size: 1.7rem;
@@ -45,27 +45,133 @@
   text-decoration: none;
 }
 
-/* About */
+/* Rendered */
 
-.about_nav {
-  /* padding-top: 6rem; */
+.render {
+  opacity: 0.98 !important;
+  z-index: 1 !important;
 }
 
-.about_head h1 {
-  font-size: 5rem;
-  padding-top: 10%;
+.rendered a {
+  margin-top: 10rem;
 }
 
-.about_me {
-  padding-top: 8rem;
-  text-align: center;
-  font-size: 1.8rem;
+.styled_button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.hide_me {
+  opacity: 0 !important;
+}
+
+/* About Click */
+
+.container_about {
+  position: relative;
   color: white;
+  /* text-align: center; */
+  background-color: slategray;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: -40rem !important;
+  height: 37rem;
+
+  z-index: -1;
+  opacity: 0;
 }
 
-.head_img {
-  padding-top: 8rem;
-  padding-left: 5rem;
-  width: 100%;
+.container_about h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 4rem;
+}
+
+.container_about p {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-top: 5.5rem;
+  padding-left: 3rem;
+}
+
+.container_about img {
+  padding-right: 2rem;
+  padding-left: 1rem;
   height: 100%;
+}
+
+.container_about h4 {
+  text-align: center;
+  font-size: 0.8rem;
+  padding-top: 2.5rem;
+}
+
+/* Skills */
+
+.container_skills {
+  position: relative;
+  color: white;
+  /* text-align: center; */
+  background-color: slategray;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: -37rem !important;
+  height: 37rem;
+
+  z-index: -1;
+  opacity: 0;
+}
+
+.container_skills h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 4rem;
+}
+
+/* Projects */
+
+.container_projects {
+  position: relative;
+  color: white;
+  /* text-align: center; */
+  background-color: slategray;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: -37rem !important;
+  height: 37rem;
+
+  z-index: -1;
+  opacity: 0;
+}
+
+.container_projects h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 4rem;
+}
+
+/* Social */
+
+.container_social {
+  position: relative;
+  color: white;
+  /* text-align: center; */
+  background-color: slategray;
+  max-width: 60%;
+  margin: 0 auto;
+  margin-top: -37rem !important;
+  height: 37rem;
+
+  z-index: -1;
+  opacity: 0;
+}
+
+.container_social h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 4rem;
 }

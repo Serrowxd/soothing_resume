@@ -27,34 +27,174 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <!-- Logo / PDF Resume -->
-    <!-- Background Image -->
-    <div>
-      <img src="./assets/bkg.jpg" alt="background" class="img">
-    </div>
-
-    <!-- Centered Text -->
-    <div class="container">
-      <div class="main_name">
-        <h1>Kevin Jolley</h1>
-      </div>
-      <div class="main_title d-flex flex-row">
-        <h1 class="anim_left"> Web Developer</h1>
-        <h1 class="anim_mid"> ||| </h1>
-        <h1 class="anim_right">JavaScript Fanatic</h1>
+  <div>
+    <div class="container-fluid">
+      <!-- Logo / PDF Resume -->
+      <!-- Background Image -->
+      <div>
+        <img src="./assets/bkg.jpg" alt="background" class="img">
       </div>
 
-      <!-- Links -->
-      <div class="main_nav">
-        <div class="main_nav d-flex flex-row">
-          <a href="./about.html" class="href navcont">About</a>
-          <a href="./skills.html" class="href navcont">Skills</a>
-          <a href="#" class="href navcont">Projects </a>
-          <a href="#" class="href navcont">Social</a>
+      <!-- Centered Text -->
+      <div class="container">
+        <div class="main_name">
+          <h1>Kevin Jolley</h1>
+        </div>
+        <div class="main_title d-flex flex-row">
+          <h1 class="anim_left"> Web Developer</h1>
+          <h1 class="anim_mid"> ||| </h1>
+          <h1 class="anim_right">JavaScript Fanatic</h1>
+        </div>
+
+        <!-- Links -->
+        <div class="main_nav">
+          <div class="main_nav d-flex flex-row">
+            <a href="#" class="navcont about_click">About</a>
+            <a href="#" class="navcont skills_click">Skills</a>
+            <a href="#" class="navcont projects_click">Projects </a>
+            <a href="#" class="navcont social_click">Social</a>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div class="container_about">
+        <button class="navClose styled_button">X</button>
+        <h1> A little about me, </h1>
+
+        <div class="d-flex flex-row">
+          <p> I'm probably the biggest nerd you'll ever meet. You can find me playing Dungeons & Dragons on the weekends, hunched
+            over a keyboard behind a computer screen, or with my nose burried deep in a book. My dream is to become a successful
+            and recognized full-stack developer, as well as a published author. Though I only recently started my quest into
+            the world of code, I hit the ground running and haven't let up since.
+          </p>
+          <img src="./assets/headshot.png" alt="">
+        </div>
+        <h4>“The clock is running. Make the most of today. Time waits for no man. Yesterday is history. Tomorrow is a mystery.
+          Today is a gift. That's why it is called the present.”
+          <strong>- Alice Morse Earle</strong>
+        </h4>
+
+
+      </div>
+
+      <div class="container_skills">
+        <button class="navClose styled_button">X</button>
+        <h1> Some stuff I'm good at, </h1>
+      </div>
+
+      <div class="container_projects">
+        <button class="navClose styled_button">X</button>
+        <h1> Some stuff I'm good at, </h1>
+      </div>
+
+      <div class="container_social">
+        <button class="navClose styled_button">X</button>
+        <h1> Some stuff I'm good at, </h1>
+      </div>
+
+      <script>
+
+        // WRITE TESTS TO MAKE SURE IT HAS THE CLASS BEFORE RENDERING THE NEW ONE
+
+        // Button Toggle
+
+        $('.navClose').click(function () {
+          toggleNavOff();
+        });
+
+        // About Render
+
+        $('.about_click').click(function () {
+          // $('.container_about').toggleClass("render");
+          $('.about_click').addClass("navClose")
+          $('.container_about').addClass("render");
+          toggleNavOn();
+          hideName();
+          // $('.main_nav').toggleClass("rendered");
+          removeClassSkills();
+          removeClassSocial();
+          removeClassProjects();
+        });
+
+        // Skills Render
+
+        $('.skills_click').click(function () {
+          $('.container_skills').addClass("render");
+          toggleNavOn();
+          hideName();
+          // $('.main_nav').toggleClass("rendered");
+          removeClassAbout();
+          removeClassSocial();
+          removeClassProjects();
+        });
+
+        // Projects Render
+
+        $('.projects_click').click(function () {
+          $('.container_projects').addClass("render");
+          toggleNavOn();
+          hideName();
+          // $('.main_nav').toggleClass("rendered");
+          removeClassAbout();
+          removeClassSkills();
+          removeClassSocial();
+        });
+
+        // Social Render
+
+        $('.social_click').click(function () {
+          $('.container_social').addClass("render");
+          toggleNavOn();
+          hideName();
+          // $('.main_nav').toggleClass("rendered");
+          removeClassAbout();
+          removeClassSkills();
+          removeClassProjects();
+        });
+
+        // NavToggle Function
+
+        function toggleNavOn() {
+          $('.main_nav').addClass('rendered');
+        }
+
+        function toggleNavOff() {
+          $('.main_nav').removeClass('rendered');
+          $('.main_name').removeClass('hide_me');
+          $('.main_title').removeClass('hide_me');
+          removeClassAbout();
+          removeClassSocial();
+          removeClassProjects();
+          removeClassSkills();
+        }
+
+        // Remove Functions
+
+        function removeClassAbout() {
+          $('.container_about').removeClass('render');
+        }
+
+        function removeClassSkills() {
+          $('.container_skills').removeClass('render');
+        }
+
+        function removeClassProjects() {
+          $('.container_projects').removeClass('render');
+        }
+
+        function removeClassSocial() {
+          $('.container_social').removeClass('render');
+        }
+
+        // Name Toggle
+
+        function hideName() {
+          $('.main_name').addClass('hide_me');
+          $('.main_title').addClass('hide_me');
+        }
+
+
+      </script>
 </body>
 
 </html>

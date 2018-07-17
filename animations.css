@@ -15,7 +15,6 @@
 
 .anim_mid {
   opacity: 0;
-  /* transform: rotate(90deg); */
 
   animation-name: mid_reveal;
   animation-duration: 3s;
@@ -112,42 +111,38 @@
   color: gray;
 }
 
-/* About */
-
-.navcont_about {
-  opacity: 0;
-
-  animation-name: text_load;
-  animation-duration: 3s;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
+.main_nav a {
+  transition: margin-top 1s ease-in-out;
 }
 
-.about_me {
-  opacity: 0;
-
-  animation-name: text_load;
-  animation-duration: 3s;
-  animation-delay: 4s;
-  animation-fill-mode: forwards;
+.main_name {
+  transition: opacity 1s ease-in-out;
 }
 
-.head_img {
-  opacity: 0;
+.main_title {
+  transition: opacity 1s ease-in-out;
+}
 
-  animation-name: text_load;
-  animation-duration: 3s;
-  animation-delay: 4s;
-  animation-fill-mode: forwards;
+/* About Overlay */
+
+.container_about {
+  transition: opacity 1s ease-in-out;
 }
 
 /* Skills */
 
-.icon {
-  max-width: 5rem;
-  max-height: 5rem;
+.container_skills {
+  transition: opacity 1s ease-in-out;
 }
 
-.icons {
-  justify-content: space-around;
+/* Projects */
+
+.container_projects {
+  transition: opacity 1s ease-in-out;
+}
+
+/* Social */
+
+.container_social {
+  transition: opacity 1s ease-in-out;
 }
